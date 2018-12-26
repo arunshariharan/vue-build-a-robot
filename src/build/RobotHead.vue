@@ -2,6 +2,7 @@
   <div class="top part">
     <div class ='robot-name'>
       <h3>{{ selectedRobot.head.title }} </h3>
+      <span v-if="selectedRobot.head.onSale" class = 'sale-span-head'>On Sale!</span>
     </div>
     <img :src="selectedRobot.head.src" title="head"/>
     <button @click="selectPreviousHead()"
@@ -58,7 +59,12 @@ export default {
   width: 100%;
   text-align: center;
 }
-h3 {
-  color: blueviolet;
+
+.sale-span-head {
+  color: red;
+  top: 20px;
+  left: 100px;
+  position: absolute;
+  width: 100%
 }
 </style>

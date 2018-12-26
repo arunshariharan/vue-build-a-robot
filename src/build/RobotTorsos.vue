@@ -1,8 +1,5 @@
 <template>
 <div class="middle-row">
-    <div class ='robot-name'>
-      <h3>{{ selectedRobot.torso.title }} </h3>
-    </div>
   <div class="center part">
     <img :src="availableParts.torsos[selectedTorsosIndex].src" title="left arm"/>
     <button @click="selectPreviousTorso()"
@@ -49,13 +46,4 @@ export default {
 </script>
 
 <style>
-.robot-name {
-  position: absolute;
-  top: -50px;
-  width: 100%;
-  text-align: center;
-}
-h3 {
-  color: blueviolet;
-}
 </style>

@@ -2,6 +2,7 @@
   <div class="left part">
     <div class ='left-arm-name'>
       <h3>{{ selectedRobot.arms.title }} </h3>
+      <span v-if="selectedRobot.arms.onSale" class = 'sale-span-left-arm'>On Sale!</span>
     </div>
     <img :src="availableParts.arms[selectedArmsIndex].src" title="left arm"/>
     <button @click="selectPreviousArm()"
@@ -54,7 +55,12 @@ export default {
   width: 100%;
   text-align: center;
 }
-h3 {
-  color: blueviolet;
+.sale-span-left-arm {
+  color: red;
+  top: 20px;
+  left: -85px;
+  position: absolute;
+  width: 100%
 }
+
 </style>

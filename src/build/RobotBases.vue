@@ -2,6 +2,7 @@
   <div class="bottom part">
     <div class ='base-name'>
       <h3>{{ selectedRobot.base.title }} </h3>
+      <span v-if="selectedRobot.base.onSale" class = 'sale-span-base'>On Sale!</span>
     </div>
     <img :src="availableParts.bases[selectedBasesIndex].src" title="left arm"/>
     <button @click="selectPreviousBase()"
@@ -53,7 +54,12 @@ export default {
   width: 100%;
   text-align: center;
 }
-h3 {
-  color: blue;
+.sale-span-base {
+  color: red;
+  top: 150px;
+  position: absolute;
+  width: 100%
 }
+
+
 </style>

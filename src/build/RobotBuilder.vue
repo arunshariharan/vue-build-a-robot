@@ -137,5 +137,8 @@ export default {
 .right .next-selector {
   right: -3px;
 }
+h3 {
+  color: burlywood;
+}
 
 </style>
