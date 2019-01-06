@@ -23,7 +23,6 @@ import RobotBuilder from './build/RobotBuilder.vue';
 export default {
   name: 'app',
   components: {
-    // HomePage,
     RobotBuilder,
   },
 };
